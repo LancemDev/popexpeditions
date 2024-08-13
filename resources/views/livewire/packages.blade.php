@@ -49,94 +49,79 @@
     <br /><br /><br /><br /><br /><br />
 
 
-    <section class="ezy__epgrid12 light bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white relative overflow-hidden z-10">
-        <div class="container relative px-4 mx-auto">
-            <div class="flex flex-col md:flex-row gap-6 mt-12">
-                <!-- sidebar -->
-                <div class="w-full md:w-1/3 xl:w-1/4">
-                    <div class="bg-white dark:bg-slate-800 rounded-xl border dark:border-slate-700 p-4 lg:p-6">
-                        <form>
-                            <!-- Sort By Section -->
-                            <div>
-                                <h5 class="text-xl leading-tight font-bold mt-6">Sort By</h5>
-                                @php
-                                    $sortOptions = [
-                                        'Default' => 'epgrid12-sort1',
-                                        'Popularity' => 'epgrid12-sort2',
-                                        'Average rating' => 'epgrid12-sort3',
-                                        'Newness' => 'epgrid12-sort4',
-                                        'Price: Low to High' => 'epgrid12-sort5',
-                                        'Price: High to Low' => 'epgrid12-sort6'
-                                    ];
-                                @endphp
-                                @foreach($sortOptions as $label => $id)
-                                    <div class="block mt-4">
-                                        <input class="form-check-input" type="radio" id="{{ $id }}" {{ $loop->first ? 'checked' : '' }} />
-                                        <label class="form-check-label" for="{{ $id }}">{{ $label }}</label>
-                                    </div>
-                                @endforeach
-                            </div>
-    
-                            <hr class="dark:border-slate-700 my-6" />
-    
-                            <!-- Price Section -->
-                            <div>
-                                <h5 class="text-xl leading-tight font-bold mt-6 mb-4">Price</h5>
-                                <div class="flex items-center flex-wrap gap-2">
-                                    @foreach(['Min Price', 'Max Price'] as $placeholder)
-                                        <div>
-                                            <select class="bg-white dark:bg-slate-800 border dark:border-slate-700 rounded-md p-3 overflow-hidden">
-                                                <option selected hidden>{{ $placeholder }}</option>
-                                                @foreach(range(1, 3) as $value)
-                                                    <option value="{{ $value }}">{{ $value }}</option>
-                                                @endforeach
-                                            </select>
-                                        </div>
-                                        @if (!$loop->last)
-                                            <div class="mx-2"><p class="mb-0 text-nowrap">--</p></div>
-                                        @endif
-                                    @endforeach
-                                </div>
-                            </div>
-    
-                            <hr class="dark:border-slate-700 my-6" />
-    
-                            <!-- Color Section -->
-                            <div class="ezy__epgrid12-filter-content">
-                                <h5 class="text-xl leading-tight font-bold mt-6">Color</h5>
-                                @php
-                                    $colorOptions = [
-                                        'Blue' => 'epgrid12-color1',
-                                        'Brown' => 'epgrid12-color2',
-                                        'Grey' => 'epgrid12-color3',
-                                        'Green' => 'epgrid12-color4',
-                                        'Orange' => 'epgrid12-color5',
-                                        'White' => 'epgrid12-color6'
-                                    ];
-                                @endphp
-                                @foreach($colorOptions as $label => $id)
-                                    <div class="block mt-4">
-                                        <input class="form-check-input" type="radio" name="flexRadioColor" id="{{ $id }}" {{ $loop->first ? 'checked' : '' }} />
-                                        <label class="form-check-label" for="{{ $id }}">{{ $label }}</label>
-                                    </div>
-                                @endforeach
-                            </div>
-                        </form>
-                    </div>
-                </div>
-    
-                <!-- products -->
-                <div class="w-full md:w-2/3 xl:w-3/4">
-                    <!-- The card here -->
+  <section class="ezy__epgrid12 light bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white relative overflow-hidden z-10">
+      <div class="container relative px-4 mx-auto">
+          <div class="flex flex-col md:flex-row gap-6 mt-12">
+              <!-- sidebar -->
+              <div class="w-full md:w-1/3 xl:w-1/4">
+                  <div class="bg-white dark:bg-slate-800 rounded-xl shadow-xl border dark:border-slate-700 p-4 lg:p-6">
+                      <form>
+                         <!-- Filter By Country Section -->
+                          <div>
+                              <h5 class="text-xl leading-tight font-bold mt-6">Filter By Country</h5>
+                              @php
+                                  $countryOptions = [
+                                      'Kenya' => 'Kenya',
+                                      'Tanzania' => 'Tanzania',
+                                      'Uganda' => 'Uganda',
+                                      'Rwanda' => 'Rwanda'
+                                  ];
+                              @endphp
+                              @foreach($countryOptions as $label => $value)
+                                  <div class="block mt-4">
+                                      <input class="form-check-input" type="radio" name="country" id="{{ $value }}" value="{{ $value }}" wire:click="setSelectedCountry('{{ $value }}')" />
+                                      <label class="form-check-label" for="{{ $value }}">{{ $label }}</label>
+                                  </div>
+                              @endforeach
+                          </div>
+                      </form>
+                  </div>
+              </div>
+  
+              <div class="w-full">
+                <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
                     @foreach($packages as $package)
-                        <div class="card bg-white dark:bg-gray-800 shadow-md rounded-lg p-6 mb-4">
-                            <h2 class="text-xl font-bold text-gray-900 dark:text-white">{{ $package->name }}</h2>
+                        <div class="card bg-white dark:bg-gray-800 shadow-lg shadow-orange-500/50 rounded-lg p-6 transform transition-transform duration-300 hover:scale-105">
+                            <div class="relative">
+                                <img src="{{ asset('images/packages/' . $package->photo_main) }}" alt="{{ $package->name }}" class="w-full h-48 object-cover rounded-t-lg transition-opacity duration-300 hover:opacity-90">
+                            </div>
+                            <h2 class="text-xl font-bold text-gray-900 dark:text-white mt-4">{{ $package->name }}</h2>
+                            <div class="flex items-center mt-2">
+                                <i class="fas fa-map-marker-alt text-gray-900 dark:text-white mr-2"></i>
+                                <p class="text-base leading-7 text-blue-900 dark:text-white">
+                                    No name for now
+                                </p>
+                            </div>
+                            <p class="text-base leading-7 opacity-70 mt-2 mb-0">{{ $package->description }}</p>
+                            <div class="flex items-center mt-2">
+                                <i class="fas fa-calendar-alt text-gray-900 dark:text-white mr-2"></i>
+                                <p class="text-base leading-7 text-blue-900 dark:text-white">
+                                    {{ $package->days }} days / {{ $package->nights }} nights
+                                </p>
+                            </div>
+                            <div class="h-px bg-gray-300 my-4"></div>
+                            <div class="flex items-center mt-2">
+                                <i class="fas fa-dollar-sign text-gray-900 dark:text-white mr-2"></i>
+                                <p class="text-base leading-7 text-blue-900 dark:text-white">
+                                    {{ $package->price_details }}
+                                </p>
+                            </div>
+                            <div class="flex items-center mt-2">
+                                <i class="fas fa-star text-yellow-500 mr-2"></i>
+                                <p class="text-base leading-7 text-blue-900 dark:text-white">
+                                    {{ $package->rating }}
+                                </p>
+                            </div>
+                            <a href="{{ route('package.details', ['id' => $package->id]) }}" class="underline text-blue-500 dark:text-blue-400 mt-4 inline-block">
+                                Learn More
+                            </a>
                         </div>
                     @endforeach
                 </div>
             </div>
-        </div>
-    </section>
+          </div>
+      </div>
+  </section>
 
     
 
