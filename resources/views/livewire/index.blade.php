@@ -24,8 +24,7 @@
         </nav>
  
         <div class="title">
-            <h1 class="left-align">POP </h1>
-            <h1 class="left-align"> EXPEDITIONS</h1>
+            <h1 class="left-align">POP EXPEDITIONS</h1>
             <p class="left-align">Get upto 20% off on your tours!</p>
             <a href="/register" class="button">Start Traveling!</a>
         </div>
@@ -72,134 +71,47 @@
   
 
 
-<!-- Packages -->
+  <!-- Packages -->
 
 
 
-<!-- Destinations -->
-<div class="relative">
-  <div class="flex justify-start mt-10 mb-10 absolute left-20 top-0 z-10">
-    <section class="flex items-center space-x-4">
-      <img src="{{ asset('files/file.png') }}" class="h-6" alt="Logo" title="Pop Expeditions">
-      <div class="h-6 w-1 bg-blue-900"></div>
-      <p class="text-gray-700">Beautiful places await</p>
-  </section>
-  </div>
-</div>
-<section class="ezy__service14 light py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white">
-    <div class="container px-4 mx-auto">
-
-      <div class="grid grid-cols-12 mb-6 md:mb-12">
-        <div class="our-services">
-          <h2>Our Services</h2>
-        </div>
-      </div>
-      <div class="grid grid-cols-12 gap-6 text-center">
-        <div class="col-span-12 sm:col-span-6 md:col-span-4">
-          <div
-            class="bg-center bg-no-repeat bg-cover rounded-[20px] flex flex-col justify-center items-center h-full transition duration-150"
-            style="background-image: url(https://cdn.easyfrontend.com/pictures/portfolio/portfolio4.jpg)"
-          >
-            <div
-              class="rounded-[20px] bg-blue-600 bg-opacity-50 text-white backdrop-blur scale-90 hover:scale-100 opacity-0 transition duration-500 hover:opacity-100 p-4 lg:p-16 xl:p-20"
-            >
-              <h4 class="text-2xl font-medium mb-4">Product Design</h4>
-              <p class="opacity-80">
-                Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores, illum at, aliquid
-                blanditiis eligendi qui.Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores,
-                illum at, aliquid blanditiis eligendi qui.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-span-12 sm:col-span-6 md:col-span-4">
-          <div
-            class="bg-center bg-no-repeat bg-cover rounded-[20px] flex flex-col justify-center items-center h-full transition duration-150"
-            style="background-image: url(https://cdn.easyfrontend.com/pictures/portfolio/portfolio3.jpg)"
-          >
-            <div
-              class="rounded-[20px] bg-blue-600 bg-opacity-50 text-white backdrop-blur opacity-100 p-4 lg:p-16 xl:p-20"
-            >
-              <h4 class="text-2xl font-medium mb-4">Product Design</h4>
-              <p class="opacity-80">
-                Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores, illum at, aliquid
-                blanditiis eligendi qui.Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores,
-                illum at, aliquid blanditiis eligendi qui.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-span-12 sm:col-span-6 md:col-span-4">
-          <div
-            class="bg-center bg-no-repeat bg-cover rounded-[20px] flex flex-col justify-center items-center h-full transition duration-150"
-            style="background-image: url(https://cdn.easyfrontend.com/pictures/portfolio/portfolio10.jpg)"
-          >
-            <div
-              class="rounded-[20px] bg-blue-600 bg-opacity-50 text-white backdrop-blur scale-90 hover:scale-100 opacity-0 transition duration-500 hover:opacity-100 p-4 lg:p-16 xl:p-20"
-            >
-              <h4 class="text-2xl font-medium mb-4">Product Design</h4>
-              <p class="opacity-80">
-                Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores, illum at, aliquid
-                blanditiis eligendi qui.Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores,
-                illum at, aliquid blanditiis eligendi qui.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-span-12 sm:col-span-6 md:col-span-4">
-          <div
-            class="bg-center bg-no-repeat bg-cover rounded-[20px] flex flex-col justify-center items-center h-full transition duration-150"
-            style="background-image: url(https://cdn.easyfrontend.com/pictures/portfolio/portfolio11.jpg)"
-          >
-            <div
-              class="rounded-[20px] bg-blue-600 bg-opacity-50 text-white backdrop-blur scale-90 hover:scale-100 opacity-0 transition duration-500 hover:opacity-100 p-4 lg:p-16 xl:p-20"
-            >
-              <h4 class="text-2xl font-medium mb-4">Product Design</h4>
-              <p class="opacity-80">
-                Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores, illum at, aliquid
-                blanditiis eligendi qui.Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores,
-                illum at, aliquid blanditiis eligendi qui.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-span-12 sm:col-span-6 md:col-span-4">
-          <div
-            class="bg-center bg-no-repeat bg-cover rounded-[20px] flex flex-col justify-center items-center h-full transition duration-150"
-            style="background-image: url(https://cdn.easyfrontend.com/pictures/portfolio/portfolio17.jpg)"
-          >
-            <div
-              class="rounded-[20px] bg-blue-600 bg-opacity-50 text-white backdrop-blur scale-90 hover:scale-100 opacity-0 transition duration-500 hover:opacity-100 p-4 lg:p-16 xl:p-20"
-            >
-              <h4 class="text-2xl font-medium mb-4">Product Design</h4>
-              <p class="opacity-80">
-                Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores, illum at, aliquid
-                blanditiis eligendi qui.Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores,
-                illum at, aliquid blanditiis eligendi qui.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="col-span-12 sm:col-span-6 md:col-span-4">
-          <div
-            class="bg-center bg-no-repeat bg-cover rounded-[20px] flex flex-col justify-center items-center h-full transition duration-150"
-            style="background-image: url(https://cdn.easyfrontend.com/pictures/portfolio/portfolio13.jpg)"
-          >
-            <div
-              class="rounded-[20px] bg-blue-600 bg-opacity-50 text-white backdrop-blur scale-90 hover:scale-100 opacity-0 transition duration-500 hover:opacity-100 p-4 lg:p-16 xl:p-20"
-            >
-              <h4 class="text-2xl font-medium mb-4">Product Design</h4>
-              <p class="opacity-80">
-                Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores, illum at, aliquid
-                blanditiis eligendi qui.Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores,
-                illum at, aliquid blanditiis eligendi qui.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+  <!-- Destinations -->
+  <div class="relative">
+    <div class="flex justify-start mt-10 mb-10 absolute left-20 top-0 z-10">
+      <section class="flex items-center space-x-4">
+        <img src="{{ asset('files/file.png') }}" class="h-6" alt="Logo" title="Pop Expeditions">
+        <div class="h-6 w-1 bg-blue-900"></div>
+        <p class="text-gray-700">Beautiful places await</p>
+    </section>
     </div>
-  </section>
+  </div>
+  <br /><br /><br /><br />
+
+
+  <section class="container">
+      <div class="w-full">
+        <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+            @foreach($destinations->take(3) as $destination)
+                <div class="card bg-white dark:bg-gray-800 shadow-lg shadow-orange-500/50 rounded-lg p-6 transform transition-transform duration-300 hover:scale-105">
+                    <div class="relative">
+                        <img src="{{ asset('images/destinations/' . $destination->photo_main) }}" alt="{{ $destination->name }}" class="w-full h-48 object-cover rounded-t-lg transition-opacity duration-300 hover:opacity-90">
+                    </div>
+                    <h2 class="text-xl font-bold text-gray-900 dark:text-white mt-4">{{ $destination->name }}</h2>
+                    <div class="flex items-center mt-2">
+                        <i class="fas fa-map-marker-alt text-gray-900 dark:text-white mr-2"></i>
+                        <p class="text-base leading-7 text-blue-900 dark:text-white">
+                            {{ $destination->country->name }}
+                        </p>
+                    </div>
+                    <p class="text-base leading-7 opacity-70 mt-2 mb-0">{{ $destination->description }}</p>
+                    <a href="{{ route('destination.details', ['id' => $destination->id]) }}" class="underline text-blue-500 dark:text-blue-400 mt-4 inline-block">
+                        Learn More
+                    </a>
+                </div>
+            @endforeach
+        </div>
+      </div>
+    </section>
   
 
 
@@ -365,54 +277,5 @@
 
     </section>
 
-    <!-- Footer -->
-
-    <section class="footer">
-      <div class="foot">
-          <div class="footer-content">
-              
-              <div class="footlinks-1">
-                  <div class="column">
-                      <h4>Quick Links</h4>
-                      <ul>
-                          <li><a href="/register">Register</a></li>
-                          <li><a href="/about">About Us</a></li>
-                          <li><a href="/safari-packages">Packages</a></li>
-                          <li><a href="/accomodation">Accomodation</a></li>
-                          <li><a href="/contact-us">Contact Us</a></li>
-                      </ul>
-                  </div>
-
-                  <div class="column">
-                      <h4>Support</h4>
-                      <ul>
-                          <li><a href="/contact-us">Contact Us</a></li>
-                          <li><a href="/faq">FAQs</a></li>
-                          <li><a href="/terms">Terms & Conditions</a></li>
-                          <li><a href="/privacy">Privacy Policy</a></li>
-                      </ul>
-                  </div>
-              </div>
-
-              <div class="footlinks">
-                  <h4>Connect</h4>
-                  <div class="social">
-                      <a href="https://www.facebook.com/mohd.rahil.blogger" target="_blank"><i class='bx bxl-facebook'></i></a>
-                      <a href="https://www.instagram.com/mohdrahil101" target="_blank"><i class='bx bxl-instagram'></i></a>
-                      <a href="https://www.twitter.com/mohdrahil101" target="_blank"><i class='bx bxl-twitter' ></i></a>
-                      <a href="https://www.linkedin.com/in/mohdrahil101" target="_blank"><i class='bx bxl-linkedin' ></i></a>
-                      <a href="https://www.youtube.com/techdollarz" target="_blank"><i class='bx bxl-youtube' ></i></a>
-                      <a href="https://www.mohdrahil.wordpress.com" target="_blank"><i class='bx bxl-wordpress' ></i></a>
-                      <a href="https://www.github.com/mohdrahil101" target="_blank"><i class='bx bxl-github'></i></a>
-                  </div>
-              </div>
-              
-          </div>
-      </div>
-
-      <div class="end">
-          <p>Copyright © 2024 Pop Expeditions All Rights Reserved.<br>Website developed by: <a href="#">Abugahh and LancemDev</a></p>
-      </div>
-    </section>
-
+    
 </div>
