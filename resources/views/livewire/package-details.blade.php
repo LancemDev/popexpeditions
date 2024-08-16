@@ -71,43 +71,49 @@
                             </div>
                         </div>
                     </div>
-    
+
                     <!-- Package Details -->
                     <div class="grid grid-cols-12 gap-5">
-                        <div class="col-span-12 md:col-span-6">
-                            <div>
+                        <div class="col-span-12">
+                            <div class="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6">
                                 <h3 class="text-2xl font-bold mb-4">Itinerary</h3>
                                 <p class="opacity-60 leading-relaxed">
                                     Itineraries
                                 </p>
                             </div>
                         </div>
-                        <div class="col-span-12 md:col-span-6">
-                            <div>
+                        <div class="col-span-12">
+                            <div class="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6">
                                 <h3 class="text-2xl font-bold mb-4">Highlights</h3>
                                 <p class="opacity-60 leading-relaxed">
                                     Highlights
                                 </p>
+                                <ul class="list-disc list-inside mt-4 text-gray-900 dark:text-gray-300" style="list-style-type: disc; padding-left: 1.5rem;">
+                                    <li>This tour is offered by Ongeri Expeditions.</li>
+                                    <li>This operator reserves the right to change rates advertised.</li>
+                                    <li>If an accommodation is fully booked, the operator will suggest a comparable alternative.</li>
+                                    <li>The exact order.</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
-    
+
                     <!-- Additional Information -->
                     <div class="grid grid-cols-12 gap-5 mt-12">
-                        <div class="col-span-12 md:col-span-6">
-                            <div>
+                        <div class="col-span-12">
+                            <div class="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6">
                                 <h3 class="text-2xl font-bold mb-4">Price Details</h3>
                                 <p class="opacity-60 leading-relaxed">
                                     {{ $destination->price_details }}
                                 </p>
                             </div>
                         </div>
-                        <div class="col-span-12 md:col-span-6">
-                            <div>
+                        <div class="col-span-12">
+                            <div class="bg-white dark:bg-gray-800 shadow-lg rounded-lg p-6">
                                 <h3 class="text-2xl font-bold mb-4">Duration</h3>
                                 <p class="opacity-60 leading-relaxed">
                                     <i class="fas fa-calendar-alt text-gray-900 dark:text-white mr-2"></i>
-                                    {{ $destination->days }} days / {{ $destination->nights }} nights
+                                    {{ $destination->days }} / {{ $destination->nights }}
                                 </p>
                             </div>
                         </div>

@@ -1,28 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pop Expeditions</title>
-    <link rel="icon" href="./files/logo.png">
-    <link rel="stylesheet" type="text/css" href="{{ asset(filename='style.css') }}">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet"
-    href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
-
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-   
-</head>
-<body>
+<div>
 
     <!-- Background Photo -->
     <div class="banner image-background">
         <div class="content" id="home"> 
             <nav>
-                <img src="{{ url_for('static', filename='files/file.png') }}" class="logo" alt="Logo" title="Pop Expeditions">
+                <img src="{{ asset('files/file.png') }}" class="logo" alt="Logo" title="Pop Expeditions">
                 <ul class="navbar">
                     <li><a href="/">Home</a></li>
                     <li><a href="/about">About Us</a></li>
@@ -47,7 +29,7 @@
                         <div class="relative">
                 <div class="flex justify-start mt-10 mb-10 absolute left-20 top-0 z-10">
                     <section class="flex items-center space-x-4">
-                        <img src="{{ url_for('static', filename='files/file.png') }}" class="h-11" alt="Logo" title="Pop Expeditions">
+                        <img src="{{ asset('files/file.png') }}" class="h-11" alt="Logo" title="Pop Expeditions">
                         <div class="h-6 w-1 bg-blue-900"></div>
                         <p class="text-white">Accomodation</p>
                     </section>
@@ -63,7 +45,7 @@
     <div class="relative">
       <div class="flex justify-start mt-10 mb-10 absolute left-20 top-0 z-10">
           <section class="flex items-center space-x-4">
-              <img src="{{ url_for('static', filename='files/file.png') }}" class="h-11" alt="Logo" title="Pop Expeditions">
+              <img src="{{ asset('files/file.png') }}" class="h-11" alt="Logo" title="Pop Expeditions">
               <div class="h-6 w-1 bg-blue-900"></div>
               <p class="dark:text-white">CHOOSE LOCATIONS</p>
           </section>
@@ -72,7 +54,7 @@
           <p class="dark:text-white text-4xl">FIND YOUR ACCOMODATION</p>
       </div>
     </div> 
-  <br /><br />
+  <br /><br /><br /><br />
   <div class="grid grid-cols-3 gap-4">
 
     <!--The left navbar-->
@@ -175,7 +157,7 @@
   <div class="relative">
     <div class="flex justify-start mt-10 mb-10 absolute left-20 top-0 z-10">
         <section class="flex items-center space-x-4">
-            <img src="{{ url_for('static', filename='files/file.png') }}" class="h-11" alt="Logo" title="Pop Expeditions">
+            <img src="{{ asset('files/file.png') }}" class="h-11" alt="Logo" title="Pop Expeditions">
             <div class="h-6 w-1 bg-blue-900"></div>
             <p class="dark:text-white">LET US HELP YOU</p>
         </section>
@@ -194,7 +176,6 @@
             To start planning your tour with us, 
             you can create an itinerary from scratch, or modify one of our suggested itineraries. Want to visit the beautiful destination, or start an adventure to reach to the top? We will make it happen.
           </p>
-          <a href="#" class="inline-block bg-orange-900 text-white py-2 px-4 rounded hover:bg-orange-700 transition-colors duration-300">Safari </a>
         </div>
         <div class="col-span-12 lg:col-span-7">
           <img src="https://cdn.easyfrontend.com/pictures/comingsoon/one.png" alt="" class="h-auto max-w-full" />
@@ -207,7 +188,7 @@
 <div class="relative">
   <div class="flex justify-start mt-10 mb-10 absolute left-20 top-0 z-10">
       <section class="flex items-center space-x-4">
-          <img src="{{ url_for('static', filename='files/file.png') }}" class="h-11" alt="Logo" title="Pop Expeditions">
+          <img src="{{ asset('files/file.png') }}" class="h-11" alt="Logo" title="Pop Expeditions">
           <div class="h-6 w-1 bg-blue-900"></div>
           <p class="dark:text-white">WHY US?</p>
       </section>
@@ -272,78 +253,4 @@
   
 
 
-<!-- Footer -->
-
-<section class="footer">
-  <div class="foot">
-      <div class="footer-content">
-          
-                      <div class="footlinks">
-              <div class="column">
-                  <h4>Quick Links</h4>
-                  <ul>
-                      <li><a href="/register">Register</a></li>
-                      <li><a href="/about">About Us</a></li>
-                      <li><a href="/destinations">Destinations</a></li>
-                      <li><a href="/safari-packages">Packages</a></li>
-                      <li><a href="/accomodation">Accomodation</a></li>
-                      <li><a href="/contact-us">Contact Us</a></li>
-                  </ul>
-              </div>
-          
-              <div class="column">
-                  <h4>Destinations</h4>
-                  <ul>
-                      <li><a href="/destinations/destination1">Destination 1</a></li>
-                      <li><a href="/destinations/destination2">Destination 2</a></li>
-                      <li><a href="/destinations/destination3">Destination 3</a></li>
-                  </ul>
-              </div>
-          
-              <div class="column">
-                  <h4>Support</h4>
-                  <ul>
-                      <li><a href="/contact-us">Contact Us</a></li>
-                      <li><a href="/faq">FAQs</a></li>
-                      <li><a href="/terms">Terms & Conditions</a></li>
-                      <li><a href="/privacy">Privacy Policy</a></li>
-                  </ul>
-              </div>
-          </div>
-
-
-          <div class="footlinks">
-              <h4>Connect</h4>
-              <div class="social">
-                  <a href="https://www.facebook.com/mohd.rahil.blogger" target="_blank"><i class='bx bxl-facebook'></i></a>
-                  <a href="https://www.instagram.com/mohdrahil101" target="_blank"><i class='bx bxl-instagram' ></i></a>
-                  <a href="https://www.twitter.com/mohdrahil101" target="_blank"><i class='bx bxl-twitter' ></i></a>
-                  <a href="https://www.linkedin.com/in/mohdrahil101" target="_blank"><i class='bx bxl-linkedin' ></i></a>
-                  <a href="https://www.youtube.com/techdollarz" target="_blank"><i class='bx bxl-youtube' ></i></a>
-                  <a href="https://www.mohdrahil.wordpress.com" target="_blank"><i class='bx bxl-wordpress' ></i></a>
-                  <a href="https://www.github.com/mohdrahil101" target="_blank"><i class='bx bxl-github'></i></a>
-              </div>
-          </div>
-          
-      </div>
-  </div>
-
-  <div class="end">
-      <p>Copyright © 2024 Pop Expeditions All Rights Reserved.<br>Website developed by: Abugahh and LancemDev</p>
-  </div>
-</section>
-
-<script>
-  window.addEventListener('scroll', function() {
-      const nav = document.querySelector('nav');
-      if (window.scrollY > 50) {
-          nav.classList.add('scrolled');
-      } else {
-          nav.classList.remove('scrolled');
-      }
-  });
-</script>
-</body>
-
-
-</html>
+</div>
