@@ -3,10 +3,10 @@
 namespace App\Livewire;
 
 use Livewire\Component;
-use App\Models\Accommodation as AccommodationModel;
 use Livewire\WithPagination;
+use App\Models\Accommodation as AccommodationModel;
 
-class Accomodation extends Component
+class Accommodation extends Component
 {
     use WithPagination;
 
@@ -21,8 +21,9 @@ class Accomodation extends Component
 
     public function render()
     {
-        return view('livewire.accommodations', [
-            'accommodations' => Accommodation::paginate(10),
+        return view('livewire.accommodation', [
+            'accommodations' => AccommodationModel::paginate(10),
         ]);
+        // return view('livewire.accommodation');
     }
 }

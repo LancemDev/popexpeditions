@@ -18,6 +18,7 @@ class DatabaseSeeder extends Seeder
             CountrySeeder::class,
             DestinationSeeder::class,
             PackageSeeder::class,
+            AccommodationSeeder::class,
         ]);
     }
 }
