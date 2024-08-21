@@ -18,7 +18,7 @@
                     </li>
                     <li><a href="{{ url('/safari-packages') }}">Packages</a></li>
                     <li><a href="{{ url('/accomodation') }}">Accomodation</a></li>
-                    <li><a href="{{ url('/contact-us') }}">Contact Us</a></li>
+                    <li><a href="{{ url('/contact') }}">Contact Us</a></li>
                     <li><a class="button-list" href="{{ url('/enquire-now') }}">Enquire Now</a></li>
                 </ul>
             </nav>

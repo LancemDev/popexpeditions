@@ -19,7 +19,7 @@
               </li>
               <li><a href="/safari-packages">Packages</a></li>
               <li><a href="/accommodation">Accommodation</a></li>
-              <li><a href="/contact-us">Contact Us</a></li>
+              <li><a href="/contact">Contact Us</a></li>
               <li><a class="button-list" href="/enquire-now">Enquire Now</a></li>
           </ul>
       </nav>
@@ -39,6 +39,10 @@
           </div>
       </div> 
     </div>
+
+
+    <div class="header-inner-shape" >
+        </div>
   </div>
 
   <!-- Main Content -->

@@ -10,7 +10,7 @@
                 <li><a href="/destinations">Destinations</a></li>
                 <li><a href="/packages">Packages</a></li>
                 <li><a href="/accomodation">Accomodation</a></li>
-                <li><a href="/contact-us">Contact Us</a></li>
+                <li><a href="/contact">Contact Us</a></li>
                 <li><a class="button-list" href="/enquire-now">Enquire Now</a></li>
             </ul>
         </nav>

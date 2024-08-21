@@ -18,7 +18,7 @@
               <li><a href="{{ url('/destinations') }}">Destinations</a></li>
               <li><a href="{{ url('/packages') }}">Packages</a></li>
               <li><a href="{{ url('/accomodation') }}">Accomodation</a></li>
-              <li><a href="{{ url('/contact-us') }}">Contact Us</a></li>
+              <li><a href="{{ url('/contact') }}">Contact Us</a></li>
               <li><a class="button-list" href="{{ url('/enquire-now') }}">Enquire Now</a></li>
             </ul>
         </nav>
@@ -37,7 +37,7 @@
     <div class="relative">
       <div class="flex justify-start mt-10 mb-10 absolute left-20 top-0 z-10">
           <section class="flex items-center space-x-4">
-              <img src="{{ asset('files/sent.png') }}" class="h-6" alt="Logo" title="Pop Expeditions">
+              <img src="{{ asset('files/file.png') }}" class="h-6" alt="Logo" title="Pop Expeditions">
               <div class="h-6 w-1 bg-blue-900"></div>
               <p class="text-gray-700">Beautiful places await</p>
           </section>
@@ -119,7 +119,7 @@
   <div class="relative">
     <div class="flex justify-start mt-10 mb-10 absolute left-20 top-0 z-10">
       <section class="flex items-center space-x-4">
-        <img src="{{ asset('files/sent.png') }}" class="h-6" alt="Logo" title="Pop Expeditions">
+        <img src="{{ asset('files/file.png') }}" class="h-6" alt="Logo" title="Pop Expeditions">
         <div class="h-6 w-1 bg-blue-900"></div>
         <p class="text-gray-700">Beautiful places await</p>
     </section>
@@ -219,7 +219,7 @@
     <!-- Why us -->
 
     <section class="flex justify-center items-center space-x-4">
-      <img src="{{ asset('files/sent.png') }}" class="h-6" alt="Logo" title="Pop Expeditions">
+      <img src="{{ asset('files/file.png') }}" class="h-6" alt="Logo" title="Pop Expeditions">
       <div class="h-6 w-1 bg-blue-900"></div>
       <p class="text-white-700">Don't Be A Tourist, Be A Traveler</p>
     </section>
@@ -255,7 +255,7 @@
     <div class="relative">
       <div class="flex justify-start mt-10 mb-10 absolute left-20 top-0 z-10">
         <section class="flex items-center space-x-4">
-          <img src="{{ asset('files/sent.png') }}" class="h-6" alt="Logo" title="Pop Expeditions">
+          <img src="{{ asset('files/file.png') }}" class="h-6" alt="Logo" title="Pop Expeditions">
           <div class="h-6 w-1 bg-blue-900"></div>
           <p class="text-gray-700">Beautiful places await</p>
       </section>
