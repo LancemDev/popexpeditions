@@ -8,15 +8,7 @@
           <ul class="navbar">
               <li><a href="/">Home</a></li>
               <li><a href="/about">About Us</a></li>
-              <li>
-                  <a href="/destinations">Destinations</a>
-                  <ul class="dropdown">
-                      <li><a href="/destinations/destination-kenya">Kenya Destinations</a></li>
-                      <li><a href="/destinations/destination-tanzania">Tanzania Destinations</a></li>
-                      <li><a href="/destinations/destination-rwanda">Rwanda Destinations</a></li>
-                      <li><a href="/destinations/destination-uganda">Uganda Destinations</a></li>
-                  </ul>
-              </li>
+              <li><a href="/destinations">Destinations</a></li>
               <li><a href="/safari-packages">Packages</a></li>
               <li><a href="/accommodation">Accommodation</a></li>
               <li><a href="/contact">Contact Us</a></li>

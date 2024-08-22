@@ -43,6 +43,9 @@
                 <br />
             </div> 
         </div>
+
+        <div class="header-inner-shape" >
+        </div>
     </div>
 
     <section class="ezy__about10 light py-14 md:py-24 bg-white dark:bg-[#0b1727] text-zinc-900 dark:text-white">

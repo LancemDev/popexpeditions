@@ -31,6 +31,9 @@
                 </div>
             </div> 
         </div>
+
+        <div class="header-inner-shape" >
+        </div>
     </div>
     <!-- About Section -->
     <div class="relative">
