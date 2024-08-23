@@ -75,8 +75,8 @@
                 @foreach($accommodations as $accommodation)
                     <a href="javascript:void(0)" wire:click="selectAccommodation({{ $accommodation }})" class="relative group">
                         <img class="object-cover object-center w-full h-40 max-w-full rounded-lg transition-transform duration-1000 ease-in-out transform group-hover:scale-110 group-hover:opacity-70"
-                            src="{{ asset('files/file.png') }}"
-                            alt="{{ $accommodation->name }}" />
+                        src="{{ asset('images/accomodations/' . $accommodation->image) }}" 
+                        alt="{{ $accommodation->name }}" />
                         <div class="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-700 ease-in-out bg-orange-500 bg-opacity-50">
                             <p class="text-white text-lg">{{ $accommodation->name }}</p>
                         </div>

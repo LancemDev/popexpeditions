@@ -13,5 +13,6 @@ class Accommodation extends Model
         'name',
         'country',
         'city',
+        'image',
     ];
 }
